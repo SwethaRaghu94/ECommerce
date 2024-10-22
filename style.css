@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Balsamiq Sans', sans-serif;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+
+
+h3 {
+    margin-top: 10px;
+}
+
+/* utility classes start  */
+
+.nav-container,
+.flex-container {
+
+    width: 1024px;
+    margin: 0px auto;
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.display-flex {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* utility classes end */
+
+/* nav styles start */
+
+.top {
+    background-color: #000000;
+    height: 75px;
+    border-top: 8px solid rebeccapurple;
+    color: #fff;
+    margin: 0px auto;
+    padding: 10px 0;
+
+
+}
+
+h1 {
+    background-color: #000000;
+    color: whitesmoke;
+}
+
+span {
+    background-color: #000000;
+    color: #9a00ff;
+}
+
+.top div {
+    color: white;
+    list-style-type: none;
+
+}
+
+.top div a {
+
+    color: white;
+    text-align: center;
+}
+
+
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+#number {
+    text-decoration: underline;
+    color: white;
+}
+
+#currency {
+    height: 40px;
+    width: 70px;
+}
+
+/* nav styles end  */
+
+/* content styles start */
+
+main ul {
+
+    width: 45%;
+    margin: 0px auto;
+    list-style: none;
+}
+
+main ul li {
+
+    border: 1px solid #999999;
+    color: #999999;
+    width: 120px;
+    margin: 20px;
+}
+
+
+main ul li.active {
+
+    border: 1px solid #9900ff;
+    color: #9900ff;
+    width: 120px;
+    margin: 20px;
+}
+
+
+
+#right {
+
+    transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+}
+
+#first {
+
+    margin-top: 10px;
+    width: 85%;
+    height: 25%;
+}
+
+
+main {
+    flex: 1;
+}
+
+section {
+    flex: 3;
+    align-self: center;
+
+}
+
+.main-card {
+
+    margin-top: 20px;
+}
+
+.card-bottom {
+
+    margin: 10px;
+}
+
+
+small {
+    text-decoration: line-through;
+    color: #818181;
+}
+
+.section-card {
+
+    background-color: white;
+}
+
+section div img.banner {
+    width: 100%;
+    height: 40%;
+}
+
+.flex {
+    align-items: flex-start;
+}
+
+.card-middle {
+    margin: 10px;
+}
+
+
+.buy {
+
+    background-color: #6aa850;
+    color: white;
+    border: 1px solid #6aa850;
+    margin: 0px 5px;
+    padding: 5px 5px;
+    box-shadow: 5px 5px 5px black;
+
+
+}
+
+.discount {
+
+    background-color: #9900ff;
+    color: white;
+    border: 1px solid #9900ff;
+    margin: 0 5px;
+    padding: 5px 5px;
+
+}
+
+.windows {
+
+    height: 30px;
+    width: 30px;
+}
+
+.apple {
+
+    height: 30px;
+    width: 30px;
+}
+
+.penguin {
+
+    height: 30px;
+    width: 30px;
+}
+
+/* content styles end */

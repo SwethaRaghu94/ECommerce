@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dojo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- nav bar starts -->
+    <div class="top">
+        <div class="nav-container d-flex">
+            <h1>Gaming<span>Dojo</span></h1>
+            <div class="d-flex">
+
+                <select name="currency" id="currency">
+                    <option value="euro">Euro €</option>
+                </select>
+
+                <div class="display-flex">
+                    <img src="./imgs/cart-light.png" alt="cart icon">
+                    <span id="number">0</span>
+                </div>
+                <img src="./imgs/search-light.png" alt="search icon">
+            </div>
+        </div>
+    </div>
+    <!-- nav bar ends -->
+
+    <div class="flex-container">
+        <!-- main starts* -->
+        <main>
+            <h3>Highlights</h3>
+            <div class="container d-flex">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="d-flex">
+                            <img src="./imgs/chevron-left.png" id="left" alt="left arrow" onclick="changePicBack()">
+                            <img src="./imgs/stonepunk.png" id="first" alt="stonepunk banner">
+                            <img src="./imgs/chevron-left.png" id="right" alt="right arrow" onclick="changePic()">
+                        </div>
+                        <div class="card-bottom">
+                            <ul class="flex">
+                                <li class="box"></li>
+                                <li class="active box"></li>
+                                <li class="box"></li>
+                                <li class="box"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- main ends* -->
+        <!-- section starts* -->
+        <section>
+            <div class="container d-flex">
+                <div class="section-card">
+                    <div class="card-top">
+                        <img class="banner" src="./imgs/cafe-neko.png" alt="neko banner">
+                    </div>
+                    <div class="card-middle">
+                        <h4>Cafe Neko: Gold Edition</h4>
+                        <div class="flex">
+                            <img class="windows" src="./imgs/windows.png" alt="windows icon">
+                            <img class="apple" src="./imgs/apple.png" alt="apple icon">
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="d-flex">
+                            <button class="discount">-20%</button>
+                            <div>
+                                <small>€14.98</small>
+                                <p>€10.49</p>
+                            </div>
+                            <button class="buy" onclick="increaseNumber('#number')">Buy</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-top">
+                        <img class="banner" src="./imgs/pixel-ninjas-2.png" alt="pixel banner">
+                    </div>
+                    <div class="card-middle">
+                        <h4>Pixel Ninjas 2</h4>
+                        <div class="flex">
+                            <img class="windows" src="./imgs/windows.png" alt="windows icon">
+                            <img class="apple" src="./imgs/apple.png" alt="apple icon">
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="d-flex">
+                            <button class="discount">-10%</button>
+                            <div>
+                                <small>€8.19</small>
+                                <p>€7.39</p>
+                            </div>
+                            <button class="buy" onclick="increaseNumber('#number')">Buy</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="section-card">
+                    <div class="card-top">
+                        <img class="banner" src="./imgs/stonepunk.png" alt="stonepunk banner">
+                    </div>
+                    <div class="card-middle">
+                        <h4>Stonepunk 10000 BCE</h4>
+                        <div class="flex">
+                            <img class="windows" src="./imgs/windows.png" alt="windows icon">
+                            <img class="apple" src="./imgs/apple.png" alt="apple icon">
+                            <img class="penguin" src="./imgs/linux.png" alt="linux icon" onclick="alertMessage()">
+                        </div>
+                    </div>
+                    <div class="card-bottom">
+
+                        <div class="d-flex">
+                            <button class="discount">NEW</button>
+                            <div>
+                                <p>€19.99</p>
+                            </div>
+                            <button class="buy" onclick="increaseNumber('#number')">Buy</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!-- section starts* -->
+
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
